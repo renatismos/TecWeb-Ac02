@@ -20,10 +20,10 @@
                         <li> Membros do Grupo:</li>
                             <ul>
                 
-                                    <li>Bruno Maranini Flaks</li>
-                                    <li>Filipe Gomes Furtado</li>
-                                    <li>José Eduardo Pereira de Albuquerque</li>
-                                    <li>Renato Souza Alves</li>
+                                <li>Bruno Maranini Flaks                    RA: 1701824     Github: Flaks009</li>
+                                <li>Filipe Gomes Furtado                    RA: 1800555     Github: filipefurtado</li>
+                                <li>José Eduardo Pereira de Albuquerque     RA: 1801166     Github: eajose</li>
+                                <li>Renato Souza Alves                      RA: 1800389     Github: renatismo</li>
                                 
                             </ul>
                     </ol>
