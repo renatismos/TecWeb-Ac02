@@ -175,55 +175,187 @@
                 <br><br>  
 
 
-                <center><h1>Links Para os Exercícios da AC 02</h1></center> 
-                <a href="ac02_ex01.html">Ex 01</a> <br/>
-                <a href="ac02_ex02.html">Ex 02</a> <br/>
-                <a href="ac02_ex03.html">Ex 03</a> <br/>
-                <a href="ac02_ex05.html">Ex 05</a> <br/>
-            
+               <head>
+            <meta charset="UTF-8">
+           <h1></hh1><center> EXERCÍCIO 04</center></h1>
+        </head>
+        <body>
+        <ul>
+            <li>
+                <a href="ac02_ex01.html">Página 1</a>
+            </li>
+            <li>
+                <a href="ac02_ex02.html">Página 2</a>
+            </li>
+            <li>
+                <a href="ac02_ex03.html">Página 3</a>
+            </li>
+            <li>
+                <a href="ac02_ex05.html">Página 4</a>
+            </li>
+        </ul>
+        </body>    
                 <br><br>
                 <!--Exercício 05-->
                 <br><br>  
 
                 <a href="ac02_ex04.html">Index</a> <br/>
-            <form>
+            <html>
+<head>
+    <title>ac02_exe05</title>
+<body>
 
-                    <center><h1>Cadastro de Editoras</h1></center>
+<style>
+.box {
+position: absolute;
+top: 4%;
+left: 50%;
+transform: translate(-50%, 120%);
+width: px;
+padding: 100px;
+background: rgba(0, 1, 1, .2);
+box-sizing: border-box;
+box-shadow: 0px 15px 25px rgba(0,0,0,0.1);
+border-radius: 15px;
+}
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 12px;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #eee;
+}
+.container:hover input ~ .checkmark {
+background-color: #fff;
+}
+.container input:checked ~ .checkmark {
+background-color: #2198F3;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.box input[type="submit"] {
+background: transparent;
+border: none;
+outline: none;
+color: #fff;
+background: #03a9f4;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+}
+.box .inputBox {
+position:relative ;
+}
+.box .inputBox input {
+width: 100%;
+padding: 10px 0px;
+font-size: 12px;
+color: #000;
+letter-spacing: 1px;
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
 
-                    
-                    <label for="Nome">Nome</label><br>
-                    <input type="text" name="Nome" id="Nome"/><br/><br/>
-                    <label for="Endereco">Endereço</label><br>
-                    <input type="text" name="Endereco" id="Endereco"/><br/><br/>
-                    <label for="cnpj">CNPJ</label><br>
-                    <input type="text" name="cnpj" id="cnpj"/><br/><br/>
-                    <label for="site">Site</label><br>
-                    <input type="text" name="site" id="site"/><br/><br/>
-                    <label for="email">E-mail</label><br>
-                    <input type="text" name="email" id="email"/><br/><br/>
-                    <label for="Telefone">Telefone</label><br>
-                    <input type="text" name="Telefone" id="Telefone"/><br/><br/>
-                    <label for="contato">Nome para contato</label><br>
-                    <input type="text" name="contato" id="contato"/><br/><br/>
-                    
-                    Gêneros de Publicação:  <br>
-                    <input type="checkbox" name="Policial">Policial<br/>
-                    <input type="checkbox" name="Ficção">Ficção<br/>
-                    <input type="checkbox" name="Não ficção">Não ficção<br/>
-                    <input type="checkbox" name="Religioso">Religioso<br/>
-                    <input type="checkbox" name="Esporte">Esporte<br/>
-                    <input type="checkbox" name="Profissional">Profissional<br/>
-                    <input type="checkbox" name="Outros">Outros:
-                    <input type="text" placeholder="Preencher aqui!" rows='1' cols='150'>
-                               
-                    <br/><br/><br/><br/>
-                    
-                    <center><input type="submit" value="Enviar"/><br/><br/></center>     
+}
+ 
+</style>
 
-            </form>
+
+ <div class="box">
+
+        <h2>Cadastro de editoras</h2>
+        <form>
+            <br><br><div class="inputBox">
+            <label>Nome da editora</label>
+                <input type="text" name="nome" required minlength="3" maxlength="30">
+                
+            </div></br>
+            <div class="inputBox">
+            <label>E-mail</label>
+                <input type="email" name="email" required minlength="5" maxlength="30">
+                
+            </div></br>
+            <div class="inputBox">
+              <label>Site da editora</label>
+                <input type="url" name="site" required minlength="5" maxlength="70">
+              
+            </div></br>
+            <div class="inputBox">
+            <label>CNPJ da empresa </label>
+                <input type="number" name="cnpj" maxlength="14" required>
+                
+            </div></br>
+            <div class="inputBox">
+             <label>Endereço completo</label>
+                <input type="text" name="endereco" minlength="5" maxlength="120" required>
+               
+            </div></br>
+            <div class="inputBox">
+             <label>Telefone para contato</label>
+                <input placeholder="(00)00000-0000" type="tel" name="telefone" maxlength="9" required>
+               
+            </div></br>
+            <div class="inputBox">
+              <label>Nome para contato</label>
+                <input type="text" name="contato" minlength="3" maxlength="30" required>
+              
+            </div>
+        </form>
+    
+
+
+<h3>Gêneros de Publicação:</h3>
+
+<label class="container"><input type="checkbox"checked="checked"><span class="checkmark"></span></label>
+<label class="container">Policial<input type="checkbox"><span class="checkmark"></span></label>
+<label class="container">Ficção  <input type="checkbox">  <span class="checkmark"></span></label>
+<label class="container">Não ficção<input type="checkbox">  <span class="checkmark"></span></label>
+<label class="container">Religioso<input type="checkbox"> <span class="checkmark"></span></label>
+<label class="container">Esporte<input type="checkbox"><span class="checkmark"></span></label>
+<label class="container">Outros<input type="checkbox"><span class="checkmark"></span></label>
+<input type="text" placeholder="Quais?" rows='1' cols='150'>
+<br><br><center><input type="submit" name="" value="Cadastrar">
+</body>
+ </div>
+</html>
 
     </body>    
 
 </html>
-
-          
